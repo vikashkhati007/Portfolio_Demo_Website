@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap');
+/* footer font */
+  @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Donegal+One&display=swap');
+  /* title */
+  @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(38, 38, 37);
+    width: 100%;
+    height: 100%;
+
+}
+
+/* navbar css */
+
+nav{
+    background-color: rgb(38, 38, 37);
+    display: flex;
+    justify-content: space-between;
+    padding:20px 20px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4);
+    z-index: 99;
+}
+
+.navbar-logo a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.link{
+    text-decoration: none;
+    padding: 20px;
+    color: aliceblue;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.link:hover{
+    transition: all ease 2s;
+    color: rgb(234, 255, 0);
+}
+
+
+/* navbar css */
+
+/* content css */
+.contentcontainer {
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.circlecontainer{
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+    transition: .5s;
+    animation: padding 2s ease-in-out infinite alternate-reverse;
+}
+
+
+
+@keyframes padding {
+    0%{
+        padding: 150px 40px;
+    background-color: rgba(0,0,0,0.3);  
+    }
+    100%{
+        padding: 100px 100px;
+        background-color: rgba(0,0,0,0.7);
+
+
+    }
+}
+
+.introdunctioncontainer h1{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 4rem;
+    animation: opening 2s ease-in-out infinite alternate-reverse;
+    
+}
+
+@keyframes opening{
+    0%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.introdunctioncontainer p{
+    font-family: 'Donegal One', serif;
+    padding: 0px 30px;
+    animation: opening 2s ease-in-out infinite alternate-reverse;
+
+}
+
+/* content css */
+
+/* Footer Css */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: rgb(38, 38, 37);
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+
+}
+footer p {
+    color: white;
+    opacity: 0.7;
+    position: relative;
+    bottom: 2px;
+
+}
+footer .button {
+    cursor: pointer;
+    padding: 0px 10px;
+    color: white;
+    opacity: 0.5;
+
+}
+footer .button:hover {
+    color: white;
+    opacity: 1;
+}
+
+footer .icons{
+    padding: 20px;
+    margin: auto 0px;
+}
+
+.aboutcontainer{
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutborder{
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    margin: 0px 20px;
+    background-color: rgba(0,0,0,0.1);
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.aboutcontainer .aboutborder .aboutcontent img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+
+}
+
+.aboutcontainer .aboutborder .aboutcontent h1{
+    font-family: 'Alatsi', sans-serif;
+}
+.aboutcontainer .aboutborder .aboutcontent p {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.contactcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79vh;
+    color: white;
+}
+
+.itemscontainer h1{
+    font-size: 2rem;
+    font-family: 'Manjari', sans-serif;
+    padding-top: 20px;
+
+}
+.itemscontainer{
+    margin: 0px 100px;
+    padding: 0px 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.1);
+    animation: border 1s forwards;
+    border: 2px solid rgba(255,255,255,0.7);
+
+}
+@keyframes border {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+
+    }
+    
+}
+.itemscontainer input{
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+
+
+.emailtextareafield textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    height: 130px;
+    padding: 2px 5px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    outline: none;
+    text-align: center;
+    margin: 10px 5px;
+
+}
+.emailtextareafield input{
+    width: inherit;
+}
+
+.emailtextareafield{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.itemscontainer .inputcontainer button {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(238, 153, 16);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .itemscontainer .inputcontainer button:hover {
+    background-color: rgb(218, 128, 1);
+  }
+  
+
+.form-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.projectscontainer{
+    height: 79vh;
+}
+
+.projectscontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.projectborder{
+    width: 350px;
+    border: 2px solid white;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectborder{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.projectborder img{
+    border-radius: inherit;
+    width: inherit;
+    height: inherit;
+}
+.projectborder img:hover{
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255,0.4);
+}
+
+.projectborder h1{
+    transition: 0.5s;
+    transform: translateY(-380px);
+    animation-name: downward;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: 1s;
+    z-index: 1;
+}
+
+@keyframes downward {
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+.projectborder h1 button{
+    transition: .5s;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.visiticon{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
+    animation-name: upward;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: .7s;
+}
+.visiticon:hover{
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3);
+    border: 1px groove white;
+    
+}
+@keyframes upward {
+    0%{
+        transform: translateY(0px);
+
+    }
+    100%{
+        transform: translateY(-120px);
+
+    }
+    
+}
