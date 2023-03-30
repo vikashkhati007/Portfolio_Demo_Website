@@ -128,9 +128,11 @@ footer{
     background-color: rgb(38, 38, 37);
     box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
     position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-
 }
+
 footer p {
     color: white;
     opacity: 0.7;
@@ -283,7 +285,6 @@ footer .icons{
   .itemscontainer .inputcontainer button:hover {
     background-color: rgb(218, 128, 1);
   }
-  
 
 .form-btn{
     display: flex;
