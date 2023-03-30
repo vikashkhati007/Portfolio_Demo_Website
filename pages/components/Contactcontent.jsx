@@ -1,6 +1,8 @@
+import { useRouter } from 'next/router';
 import { useRef } from 'react';
 
 export default function Contactcontent() {
+  const router = useRouter();
   const firstnameRef = useRef(null);
   const lastnameRef = useRef(null);
   const emailRef = useRef(null);
@@ -31,6 +33,8 @@ export default function Contactcontent() {
         );
 
       window.location.href = mailtoLink;
+      router.push("/home");
+      
     }
   }
 
