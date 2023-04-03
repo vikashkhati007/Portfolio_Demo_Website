@@ -5,6 +5,7 @@ export default function content() {
   return (
     <>
     <div className='contentcontainer'>
+      <div className="circlecontainer">
       <motion.div className='introdunctioncontainer'
        initial={{ scale: 0 }}
        animate={{ scale: 1 }}
@@ -17,6 +18,8 @@ export default function content() {
       <p>Hey, I am a full Stack Web Developer</p>
       </motion.div>
       </div>
+      </div>
+
     </>
   )
       }

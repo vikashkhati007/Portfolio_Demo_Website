@@ -71,12 +71,35 @@ nav{
     color: aliceblue;
 
 }
+.circlecontainer{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: padding 2s alternate-reverse;
+}
+@keyframes padding {
+    0%{
+        border: none;
+        background-color: transparent;
+    }
+    50%{
+        background-color: rgba(0,0,0,0.3);
+    }
+    100%{
+        background-color: black;
+        
+    }
+    
+}
 
 
 .introdunctioncontainer h1{
     font-family: 'Didact Gothic', sans-serif;
     animation: opening 2s ease-in-out infinite alternate-reverse;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
 
     
@@ -95,7 +118,6 @@ nav{
     font-family: 'Donegal One', serif;
     padding: 0px 30px;
     animation: opening 2s ease-in-out infinite alternate-reverse;
-    font-size: 1.4rem;
 
 
 }
@@ -388,4 +410,80 @@ footer .icons{
 
     }
     
+}
+
+@media screen and (max-width:600px) {
+    .aboutcontainer .aboutborder .aboutcontent img{
+        width: 100px;
+        height: 100px;
+    }
+    .aboutcontainer .aboutborder .aboutcontent h1{
+        font-size: 1.2rem;
+    }
+    .aboutcontainer .aboutborder .aboutcontent p{
+        font-size: .8rem;
+    }
+    .nav-items ul li{
+        font-size: 12px;
+    }
+     .projectscontainer{
+        flex-wrap: wrap;
+        padding-top: 20px;
+        gap: 20px;
+     }
+     
+    .itemscontainer{
+        width: 150px;
+        height: 500px;
+        position: relative;
+        top: 50px;
+        
+    }
+    .itemscontainer h1{
+        font-size: 1.5rem;
+    }
+    .itemscontainer input{
+        width: inherit;
+    }
+    .contactcontainer{
+        margin-bottom: 200px;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .aboutcontainer .aboutborder .aboutcontent img{
+        width: 120px;
+        height: 120px;
+    }
+    .aboutcontainer .aboutborder .aboutcontent h1{
+        font-size: 1.8rem;
+    }
+    .aboutcontainer .aboutborder .aboutcontent p{
+        font-size: .9rem;
+    }
+   
+     .projectscontainer{
+        flex-wrap: wrap;
+        padding-top: 20px;
+        gap: 20px;
+     }
+     
+    .itemscontainer{
+        width: 200px;
+        height: 500px;
+        position: relative;
+        top: 50px;
+        
+    }
+    .itemscontainer h1{
+        font-size: 2rem;
+    }
+    .itemscontainer input{
+        width: 300px;
+    }
+    .contactcontainer{
+        margin-bottom: 200px;
+    }
+
 }
