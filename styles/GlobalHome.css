@@ -178,7 +178,7 @@ footer .icons{
     background-color: rgba(0,0,0,0.1);
     width: 800px;
     height: 450px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .aboutcontainer .aboutborder .aboutcontent img{
@@ -410,6 +410,59 @@ footer .icons{
 
     }
     
+}
+@media screen and (max-width: 450px) {
+    .navbar-logo a{
+        display: none;
+    }
+    .nav-items ul li{
+        display: contents;
+    }
+    .aboutcontainer{
+        margin: 40px 0px;
+        margin-bottom: 100px;
+    }
+    .contactcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto;
+    }
+    .introdunctioncontainer h1{
+        animation: opening 2s ease-in-out infinite alternate-reverse;
+        font-size: 3rem;
+        
+    }
+    .introdunctioncontainer p{
+        animation: opening 2s ease-in-out infinite alternate-reverse;
+        font-size: 0.8em;
+        
+    }
+    footer p{
+        font-size: 0.8em;
+    }
+    .icons .button{
+        font-size: 0.9em;
+    }
+    .projectborder{
+        width: 300px;
+        font-size: 0.8em;
+        height: 350px;
+     }
+     .projectborder h1{
+        transform: translateY(-330px);
+     }
+  
+    .contact{
+        font-size: 10%;
+    }
+    .itemscontainer{
+        border: none;
+        background-color: transparent;
+    }
+    .circlecontainer{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width:600px) {
