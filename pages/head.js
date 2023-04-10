@@ -20,5 +20,7 @@ export default function head() {
     </Head>
       
     </>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9647614948015971"
+     crossorigin="anonymous"></script>
   )
 }
