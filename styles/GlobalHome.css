@@ -213,7 +213,6 @@ footer .icons{
 
 }
 .itemscontainer{
-    margin: 0px 100px;
     padding: 0px 100px;
     border-radius: 20px;
     display: flex;
@@ -423,9 +422,9 @@ footer .icons{
         margin-bottom: 100px;
     }
     .contactcontainer{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px auto;
+        position: absolute;
+        top: 0;
+        z-index: -23;
     }
     .introdunctioncontainer h1{
         animation: opening 2s ease-in-out infinite alternate-reverse;
@@ -459,10 +458,32 @@ footer .icons{
         border: none;
         background-color: transparent;
     }
+
+    .itemscontainer{
+        border: 2px solid rgba(255,255,255,0.7);
+        position: relative;
+        top: 0;
+        position: absolute;
+    
+    }
+    @keyframes border {
+        0%{
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(0.8);
+    
+        }
+        
+    }
     .circlecontainer{
         width: 300px;
         height: 300px;
     }
+    .contactcontainer {
+        margin-bottom: 0px;
+    }
+  
 }
 
 @media screen and (max-width:600px) {
@@ -499,7 +520,7 @@ footer .icons{
         width: inherit;
     }
     .contactcontainer{
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
 
 }
@@ -536,7 +557,8 @@ footer .icons{
         width: 300px;
     }
     .contactcontainer{
-        margin-bottom: 200px;
+        
+        margin-bottom: 150px;
     }
 
 }
