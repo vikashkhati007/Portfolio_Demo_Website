@@ -410,6 +410,9 @@ footer .icons{
     }
     
 }
+
+/* MobileScreen */
+
 @media screen and (max-width: 450px) {
     .navbar-logo a{
         display: none;
