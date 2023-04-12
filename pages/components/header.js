@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function header() {
   return (
     <>
-    <nav>
+    <nav className="nav">
     <div className="navbar-logo">
       <a href="/">VK</a>
     </div>
